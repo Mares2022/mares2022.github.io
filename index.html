@@ -5,43 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ale Tlapalli</title>
     <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .menu {
+            position: fixed;
+            left: -160px;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            transition: left 0.3s;
+            padding-top: 60px;
+            background-color: transparent;
+            background-image: url('./resources/images/corals.jpg');
+            background-size: cover;
+            background-position: center;
+            border: 1px solid gray;
+        }
+        .menu a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .menu a:hover {
+            background-color: khaki;
+        }
+        .menu-container:hover .menu {
+            left: 0;
+        }
+        .menu-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 100%;
+            background-color: transparent;
+        }
+        .menu-logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+        }
+        .instagram-button, .behance-button {
+            display: block;
+            padding: 15px;
+            text-align: center;
+            background-color: transparent;
+            border: none;
+        }
+        .instagram-button img, .behance-button img {
+            width: 30px; /* Default size */
+            height: 30px; /* Default size */
+            transition: transform 0.3s;
+        }
+        .instagram-button:hover img, .behance-button:hover img {
+            transform: scale(1.1); /* Makes the icon slightly larger on hover */
+        }
+        /* Custom size for Behance button */
+        .behance-button img {
+            width: 40px; /* Custom size */
+            height: 40px; /* Custom size */
+        }
+    </style>
 </head>
 <body>
+    <div class="menu-container">
+        <div class="menu">
+            <img src="./resources/images/menu_white.png" alt="Menu" class="menu-logo">
+            <a href="#">Biography</a>
+            <a href="#">Courses</a>
+            <a href="#">Contact</a>
+            <a href="https://www.instagram.com/ale.tlapalli/" class="instagram-button">
+                <img src="./resources/images/instagram.png" alt="Instagram">
+            </a>
+            <!-- Behance button with a custom size -->
+            <a href="https://www.behance.net/aletlapalli" class="behance-button">
+                <img src="./resources/images/behance.png" alt="Behance">
+            </a>
+        </div>
+    </div>
     <h1>Ale Tlapalli</h1>
-    <!-- <img src="./resources/images/corals.jpg" alt="This should be an image">
-    <img src="./resources/images/hacksaw.jpeg" alt="This should be an image"> -->
     <h2 class="brushes">Brushes</h2>
-    <img src="./resources/images/hacksaw.jpeg" alt="This should be an image">
-    <img src="./resources/images/hacksaw.jpeg" alt="This should be an image">
-    <img src="./resources/images/hacksaw.jpeg" alt="This should be an image">
-    <img src="./resources/images/hacksaw.jpeg" alt="This should be an image">
     <img src="./resources/images/hacksaw.jpeg" alt="This should be an image">
     <h3>Hacksaw Brushes</h3>
     <p>Made of the highest quality oak, Hacksaw brushes are known for their weight and ability to hold paint in large amounts. Available in different sizes.<span class="price">Starting at $2.00 / frame.</span></p>
     <h2 class="frames">Frames</h2>
     <img src="./resources/images/frames.jpeg" alt="This should be an image">
-    <img src="./resources/images/frames.jpeg" alt="This should be an image">
-    <img src="./resources/images/frames.jpeg" alt="This should be an image">
-    <img src="./resources/images/frames.jpeg" alt="This should be an image">
-    <img src="./resources/images/frames.jpeg" alt="This should be an image">
     <h3>Hacksaw Brushes</h3>
     <p>Made of the highest quality oak, Hacksaw brushes are known for their weight and ability to hold paint in large amounts. Available in different sizes.<span class="price">Starting at $2.00 / frame.</span></p>
     <h2 class="paints">Paint</h2>
     <img src="./resources/images/finnish.jpeg" alt="This should be an image">
-    <img src="./resources/images/finnish.jpeg" alt="This should be an image">
-    <img src="./resources/images/finnish.jpeg" alt="This should be an image">
-    <img src="./resources/images/finnish.jpeg" alt="This should be an image">
-    <img src="./resources/images/finnish.jpeg" alt="This should be an image">
     <h3>Hacksaw Brushes</h3>
     <p>Made of the highest quality oak, Hacksaw brushes are known for their weight and ability to hold paint in large amounts. Available in different sizes.<span class="price">Starting at $2.00 / frame.</span></p>
-  
-
-
-
-
-
-
-    
-
 </body>
 </html>

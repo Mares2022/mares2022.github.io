@@ -11,6 +11,10 @@ h3,
 p {
     font-family: 'Nunito', sans-serif; /* Use Nunito */
 }
+body {
+    position:relative;
+    left:50px
+}
 
 h1 {
     /* font-family: Helvetica;
