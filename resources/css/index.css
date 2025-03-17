@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+
+*{
+    font-family: 'Nunito', sans-serif; /* Use Nunito */
+}
+
+h1, 
+h2, 
+h3, 
+p {
+    font-family: 'Nunito', sans-serif; /* Use Nunito */
+}
+
+h1 {
+    /* font-family: Helvetica;
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki; */
+
+
+    /* background-image: url('C:/Users/fuentesm/Deltares/2025/Codeacademy/Analysis/Tools/Repositories/projects/artproject/resources/images/pattern.jpeg'); */
+    background-image: url('../images/corals.jpg');
+    background-size: cover; /* Adjusts the image to cover the entire element */
+    background-position: center; /* Centers the image */
+    text-align: center; /* Centers the text */
+    
+    color: khaki; /* Sets the text color */
+    font-size: 100px;
+    font-weight: bold;
+
+      
+}
+
+h2
+{
+font-size: 32px;
+font-weight: bold;
+color: white;
+
+}
+
+h3{
+    font-weight: bold;
+}
+
+.brushes {
+    background-color: mediumspringgreen;
+}
+
+.frames {
+    background-color: lightcoral;
+}
+.paints {
+    background-color: skyblue;
+}
+
+.price {
+    font-weight: bold;
+    color: blue;
+}
