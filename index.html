@@ -9,6 +9,23 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            background: #F7F7F7;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./resources/images/acuarela_paper_texture_formatted.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.15; /* Adjust for more/less transparency */
+            z-index: -1;
         }
         .menu {
             position: fixed;
@@ -44,6 +61,7 @@
             width: 40px;
             height: 100%;
             background-color: transparent;
+            z-index: 3;
         }
         .menu-logo {
             position: absolute;
@@ -72,6 +90,43 @@
             width: 40px; /* Custom size */
             height: 40px; /* Custom size */
         }
+        .contact{
+            position: absolute;
+            bottom: 80px;
+            width:100%
+
+        }
+        .footer {
+            /* position: fixed; */
+            bottom: 0;
+            width: 100%;
+            background-color: aquamarine; /* Semi-transparent black */
+            opacity:0.5;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        .social-icons {
+            margin-top: 5px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 25px;
+            height: 25px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
     </style>
 </head>
 <body>
@@ -80,7 +135,7 @@
             <img src="./resources/images/menu_white.png" alt="Menu" class="menu-logo">
             <a href="#">Biography</a>
             <a href="#">Courses</a>
-            <a href="#">Contact</a>
+            
             <a href="https://www.instagram.com/ale.tlapalli/" class="instagram-button">
                 <img src="./resources/images/instagram.png" alt="Instagram">
             </a>
@@ -88,9 +143,13 @@
             <a href="https://www.behance.net/aletlapalli" class="behance-button">
                 <img src="./resources/images/behance.png" alt="Behance">
             </a>
+            <a href="#" class="contact">Contact</a>
+            
         </div>
+        
     </div>
     <h1>Ale Tlapalli</h1>
+    <div class="text">
     <h2 class="brushes">Brushes</h2>
     <img src="./resources/images/hacksaw.jpeg" alt="This should be an image">
     <h3>Hacksaw Brushes</h3>
@@ -103,5 +162,18 @@
     <img src="./resources/images/finnish.jpeg" alt="This should be an image">
     <h3>Hacksaw Brushes</h3>
     <p>Made of the highest quality oak, Hacksaw brushes are known for their weight and ability to hold paint in large amounts. Available in different sizes.<span class="price">Starting at $2.00 / frame.</span></p>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Ale Tlapalli. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/ale.tlapalli/" target="_blank">
+                <img src="./resources/images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.behance.net/aletlapalli" target="_blank">
+                <img src="./resources/images/behance.png" alt="Behance">
+            </a>
+        </div>
+    </footer>
+</div>
 </body>
 </html>

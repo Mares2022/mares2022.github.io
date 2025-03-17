@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
-
 *{
     font-family: 'Nunito', sans-serif; /* Use Nunito */
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 h1, 
@@ -11,7 +12,7 @@ h3,
 p {
     font-family: 'Nunito', sans-serif; /* Use Nunito */
 }
-body {
+.text {
     position:relative;
     left:50px
 }
@@ -30,9 +31,17 @@ h1 {
     text-align: center; /* Centers the text */
     
     color: khaki; /* Sets the text color */
-    font-size: 100px;
+    font-size: 50px;
     font-weight: bold;
 
+    position: fixed; /* Fixes the element at the top */
+    top: 0; /* Ensures it stays at the very top */
+    width: 100%; /* Makes it stretch across the full width */
+    z-index: 4; /* Keeps it above other elements */
+    background-color: rgba(0, 0, 0, 0.6);
+    margin:0px;
+    padding:20px;
+    border: 2px solid white;
       
 }
 
@@ -62,4 +71,8 @@ h3{
 .price {
     font-weight: bold;
     color: blue;
+}
+.text{
+    position: relative;
+    top: 100px;
 }
